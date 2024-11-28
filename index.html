@@ -11,6 +11,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -44,17 +47,28 @@
                         <main className="container mx-auto p-4">
                             <section id="home" className="my-8">
                                 <div className="text-center">
-                                   <img src="pplinkedin.jpg"
-                                       width="200" height="200" 
-                                       alt="Data analyst" className="mx-auto rounded-full" />
+                                    <img src="pplinkedin.jpg" width="200" height="200" alt="Data analyst"
+                                        className="mx-auto rounded-full" />
                                     <h2 className="text-3xl font-bold mt-4">Restu Firmansyah</h2>
                                     <p className="text-xl">Data Analyst, Data Scientist, Full-Stack Web, Database
-                                        Administrator </p>
+                                        Administrator</p>
                                     <p className="mt-4">Passionate about turning data into actionable insights.</p>
-                                    <div className="mt-4">
-                                       <a href="https://drive.google.com/file/d/1PLmBazaNopkGWQbw0fMm3y8PZx3SJy9V/view?usp=sharing" target="_blank" 
-                                           download="CV_RestuFirmansyah.pdf"
-                                           className="bg-blue-600 text-white px-4 py-2 rounded mt-4">My Resume</a>
+                                    <div className="ml-4 flex justify-center items-center">
+                                        <a href="https://drive.google.com/file/d/1PLmBazaNopkGWQbw0fMm3y8PZx3SJy9V/view?usp=sharing"
+                                            target="_blank" className="text-blue-600 hover:underline"> My
+                                            Resume</a><span className="mx-3 text-gray-600">|</span> {/* Separator
+                                            dengan
+                                            warna
+                                            abu-abu */}
+                                        <div className="ml-2"> {/* Menambahkan margin-left untuk jarak */}
+                                            <a href="https://wa.me/6282120605121" target="_blank"
+                                                className="text-blue-600 hover:underline">My WhatsApp</a>
+                                            <span className="mx-3 text-gray-600">|</span> {/* Separator dengan warna
+                                            abu-abu */}
+                                            <a href="mailto:restufirmansyh22@gmail.com"
+                                                className="text-blue-600 hover:underline">My Gmail</a>
+                                                
+                                        </div>
                                     </div>
                                 </div>
                             </section>
@@ -68,34 +82,31 @@
                                     business sectors, focusing on the capital market</p>
                                     <section id="skills" className="my-8">
                                         <h2 className="text-2xl font-bold">Skillset</h2>
-                                         <div className="flex mt-4">
-                                             <img src="https://img.icons8.com/?size=100&id=117561&format=png&color=000000"
-                                                 alt="Excel logo" className="mr-2" />
-                                             <img src="https://img.icons8.com/?size=100&id=13406&format=png&color=000000"
-                                                 alt="SQL logo" className="mr-2" />
-                                             <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000"
-                                                 alt="Python logo" className="mr-2" />
-                                             <img src="https://img.icons8.com/?size=100&id=9Kvi1p1F0tUo&format=png&color=000000"
-                                                 alt="Tableau logo" className="mr-2" />
-                                             <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
-                                                 alt="JavaScript" className="mr-2" />
-                                             <img src="https://img.icons8.com/?size=100&id=123603&format=png&color=000000"
-                                                 alt="React Native" className="mr-2" />
-                                             <img src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
-                                                 alt="Node JS" className="mr-2" />
-                                             <img src="https://img.icons8.com/?size=100&id=PZQVBAxaueDJ&format=png&color=000000"
-                                            alt="Express JS" className="mr-2" />
-                                                <img src="https://img.icons8.com/?size=100&id=21894&format=png&color=000000"
-                                                     alt="API" className="mr-2" />
-                                             <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"
-                                                 alt="HTML" className="mr-2" />
-                                             <img src="https://img.icons8.com/?size=100&id=7gdY5qNXaKC0&format=png&color=000000"
-                                                 alt="CSS" className="mr-2" />
-                                             <img src="https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000"
-                                                 alt="FIGMA" className="mr-2" />
-                                             
-                                           
-
+                                         <div class="d-flex flex-wrap">
+                                             <img alt="Excel logo" class="me-2 mb-2"
+                                                 src="https://img.icons8.com/?size=100&amp;id=117561&amp;format=png&amp;color=000000" />
+                                             <img alt="SQL logo" class="me-2 mb-2"
+                                                 src="https://img.icons8.com/?size=100&amp;id=13406&amp;format=png&amp;color=000000" />
+                                             <img alt="Python logo" class="me-2 mb-2"
+                                                 src="https://img.icons8.com/?size=100&amp;id=13441&amp;format=png&amp;color=000000" />
+                                             <img alt="Tableau logo" class="me-2 mb-2"
+                                                 src="https://img.icons8.com/?size=100&amp;id=9Kvi1p1F0tUo&amp;format=png&amp;color=000000" />
+                                             <img alt="JavaScript" class="me-2 mb-2"
+                                                 src="https://img.icons8.com/?size=100&amp;id=108784&amp;format=png&amp;color=000000" />
+                                             <img alt="React Native" class="me-2 mb-2"
+                                                 src="https://img.icons8.com/?size=100&amp;id=123603&amp;format=png&amp;color=000000" />
+                                             <img alt="Node JS" class="me-2 mb-2"
+                                                 src="https://img.icons8.com/?size=100&amp;id=hsPbhkOH4FMe&amp;format=png&amp;color=000000" />
+                                             <img alt="Express JS" class="me-2 mb-2"
+                                                 src="https://img.icons8.com/?size=100&amp;id=PZQVBAxaueDJ&amp;format=png&amp;color=000000" />
+                                             <img alt="API" class="me-2 mb-2"
+                                                 src="https://img.icons8.com/?size=100&amp;id=21894&amp;format=png&amp;color=000000" />
+                                             <img alt="HTML" class="me-2 mb-2"
+                                                 src="https://img.icons8.com/?size=100&amp;id=20909&amp;format=png&amp;color=000000" />
+                                             <img alt="CSS" class="me-2 mb-2"
+                                                 src="https://img.icons8.com/?size=100&amp;id=7gdY5qNXaKC0&amp;format=png&amp;color=000000" />
+                                             <img alt="FIGMA" class="me-2 mb-2"
+                                                 src="https://img.icons8.com/?size=100&amp;id=zfHRZ6i1Wg0U&amp;format=png&amp;color=000000" />
                                          </div>
                                         <div className="mt-4">
                                             <h3 className="text-xl font-bold">Technical Skills</h3>
@@ -333,69 +344,55 @@
                                     </div>
                                 </div>
                             </section>
+                           
                             
-                            <section id="interactive" className="my-8">
-                                <h2 className="text-2xl font-bold">Interactive Section</h2>
+
                                 <div className="mt-4">
-                                    <h3 className="text-xl font-bold">Interactive Dashboard</h3>
-                                    <iframe src="https://public.tableau.com/views/SampleDashboard" className="w-full h-64 mt-2"></iframe>
+                                    <h3 className="text-xl font-bold">Certifications</h3>
+                                    <div className="flex mt-4">
+                                        <img src="s1.png" alt="Google Data Analytics Certification"
+                                            style={{ width: '400px', height: '300px' }} className="mr-2" />
+                                        <img src="s2.png" alt="Google Data Analytics Certification"
+                                            style={{ width: '400px', height: '300px' }} className="mr-2" />
+                                        <img src="s3.png" alt="Google Data Analytics Certification"
+                                            style={{ width: '400px', height: '300px' }} className="mr-2" />
+
+                                    </div>
+                                    <div className="flex mt-4">
+                                        <img src="s4.png" alt="Google Data Analytics Certification"
+                                            style={{ width: '400px', height: '300px' }} className="mr-2" />
+                                        <img src="s5.png" alt="Google Data Analytics Certification"
+                                            style={{ width: '400px', height: '300px' }} className="mr-2" />
+                                        <img src="s6.png" alt="Google Data Analytics Certification"
+                                            style={{ width: '400px', height: '300px' }} className="mr-2" />
+
+                                    </div>
                                 </div>
-                                <div className="mt-4">
-                                    <h3 className="text-xl font-bold">Explore Dataset</h3>
-                                    <iframe src="https://public.tableau.com/views/SampleDataset" className="w-full h-64 mt-2"></iframe>
-                                </div>
-                             
-                            </section>
-                            <section id="contact" className="my-8">
+                                <section id="contact" className="mt-8" text-center style={{ backgroundColor: '#f7f7f7' }}>
                                 <h2 className="text-2xl font-bold">Contact</h2>
-                                <form className="mt-4">
-                                    <div className="mb-4">
-                                        <label className="block text-gray-700 dark:text-gray-300">Name</label>
-                                        <input type="text" className="w-full p-2 border border-gray-300 rounded dark:bg-gray-800 dark:border-gray-700"/>
-                                    </div>
-                                    <div className="mb-4">
-                                        <label className="block text-gray-700 dark:text-gray-300">Email</label>
-                                        <input type="email" className="w-full p-2 border border-gray-300 rounded dark:bg-gray-800 dark:border-gray-700"/>
-                                    </div>
-                                    <div className="mb-4">
-                                        <label className="block text-gray-700 dark:text-gray-300">Message</label>
-                                        <textarea className="w-full p-2 border border-gray-300 rounded dark:bg-gray-800 dark:border-gray-700"></textarea>
-                                    </div>
-                                    <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">Send Message</button>
-                                </form>
-                                <div className="mt-4">
-                                    <a href="https://www.linkedin.com/in/restufirmansyah/" target="_blank"
-                                        className="text-blue-600 dark:text-blue-400"><i class="fab fa-linkedin"></i>
-                                        LinkedIn</a>
-                                    <a href="https://github.com/FirmanRcode" target="_blank" 
-                                        className="text-blue-600 dark:text-blue-400 ml-4"><i
-                                            className="fab fa-github"></i> GitHub</a>
-                                    <a href="https://public.tableau.com/app/profile/restu.firmansyah/vizzes" target="_blank"
-                                        className="text-blue-600 dark:text-blue-400 ml-4"><i
-                                            className="fab fa-tableau"></i> Tableau Public</a>
-                                </div>
-                                
-                               <div className="mt-4">
-                                   <h3 className="text-xl font-bold">Certifications</h3>
-                                   <div className="flex mt-2">
-                                       <img src="s1.png" alt="Google Data Analytics Certification"
-                                           style={{ width: '400px', height: '300px' }} className="mr-2" />
-                                       <img src="s2.png" alt="Google Data Analytics Certification"
-                                           style={{ width: '400px', height: '300px' }} className="mr-2" />
-                                       <img src="s3.png" alt="Google Data Analytics Certification"
-                                           style={{ width: '400px', height: '300px' }} className="mr-2" />
-                                    
-                                   </div>
-                                   <div className="flex mt-2">
-                                       <img src="s4.png" alt="Google Data Analytics Certification"
-                                           style={{ width: '400px', height: '300px' }} className="mr-2" />
-                                       <img src="s5.png" alt="Google Data Analytics Certification"
-                                           style={{ width: '400px', height: '300px' }} className="mr-2" />
-                                       <img src="s6.png" alt="Google Data Analytics Certification"
-                                           style={{ width: '400px', height: '300px' }} className="mr-2" />
-                                    
-                                   </div>
+                               <div className="mt-4 flex justify">
+                                   
+                                   <a href="https://github.com/FirmanRcode" target="_blank" rel="noopener noreferrer"
+                                       className="text-blue-600 dark:text-blue-400 ml-4 flex items-center">
+                                       <i className="fab fa-github mr-1"></i>My  GitHub
+                                   </a>
+                                   <a href="https://wa.me/6282120605121" target="_blank" rel="noopener noreferrer"
+                                       className="text-blue-600 dark:text-blue-400 ml-4 flex items-center">
+                                       <i className="fab fa-whatsapp mr-1"></i> WhatsApp
+                                   </a>
+                                   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=restufirmansyh22@gmail.com"
+                                       target="_blank" rel="noopener noreferrer"
+                                       className="text-blue-600 dark:text-blue-400 ml-4 flex items-center">
+                                       <i className="fas fa-envelope mr-1"></i> Gmail
+                                   </a>
+                                   <a href="https://www.linkedin.com/in/restufirmansyah/" target="_blank"
+                                       rel="noopener noreferrer"
+                                       className="text-blue-600 dark:text-blue-400 ml-4 flex items-center">
+                                       <i className="fab fa-linkedin mr-"></i> LinkedIn
+                                   </a>
                                </div>
+                                
+                               
                             </section>
                             
                         </main>
